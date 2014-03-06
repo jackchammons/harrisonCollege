@@ -16,13 +16,13 @@ def makeJSONRequest(state):
 
 
 
-def printDictionary(dict):
+def printState(dict):
 	f = open('this.txt', 'a')
 	for thus in dict:
 		for this in thus.keys():
 			f.write(str(this))
 			f.write(' : ')
-			try: #Print to the terminal
+			try: #Print to file
 				f.write(str(thus[this]))
 				f.write('\n')
 			except: #In the case of a Unicode error
@@ -42,7 +42,7 @@ def fetchCountyInfo():
 	for state in states:
 		print state
 		countyInfo = makeJSONRequest(state)
-		printDictionary(countyInfo)
+		printState(countyInfo)
 	#print 'done'
 
 
