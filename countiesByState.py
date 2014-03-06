@@ -22,7 +22,7 @@ def printDictionary(dict):
 		for this in thus.keys():
 			f.write(str(this))
 			f.write(' : ')
-			try: #Print to the terminal
+			try: #Print to the file
 				f.write(str(thus[this]))
 				f.write('\n')
 			except: #In the case of a Unicode error
