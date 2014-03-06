@@ -17,7 +17,7 @@ def makeJSONRequest(state):
 
 
 def printState(dict):
-	f = open('this.txt', 'a')
+	f = open('countiesByState.txt', 'a')
 	for thus in dict:
 		for this in thus.keys():
 			f.write(str(this))
